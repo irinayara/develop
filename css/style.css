@@ -2,10 +2,38 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #fafafa;
 }
+
+a {
+    color: #043667;
+}
+
  .container {
-    width: 1010px;
+    width: 1350px;
     margin: 0 auto;
 }
+
+.button {
+    height: 41px;
+    border-radius: 4.5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 37px;
+    box-sizing: border-box;
+}
+ .button.button-blue {
+    color: #ffffff;
+    background-color: #3e99ed;
+}
+ .button.button-empty {
+    padding: 10px;
+}
+ a.button {
+    text-decoration: none;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
  nav {
     background-color: #FFF;
     padding: 30px 0;
@@ -38,7 +66,7 @@ body {
     color: #a7a7a7;
     box-sizing: border-box;
     
-    background: #fafafa url('../icons/search_icon.png') no-repeat 15px;
+    background: #fafafa url("../icons/search_icon.png") no-repeat 15px;
     padding-left: 40px;
 }
  nav .links ul {
@@ -51,4 +79,90 @@ body {
 }
  nav .links ul li:first-of-type {
     margin-left: 0;
+} 
+.user-info {
+    margin: 70px auto 60px;
+}
+ .user-info .container {
+    display: flex;
+    justify-content: space-between;
+}
+ .user-info .avatar {
+    width: 422px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .user-info .avatar .avatar-background {
+    width: 242px;
+    height: 242px;
+    background-image: linear-gradient(239deg, #d7337c, #d93173 31%, #f79955 58%, #f5a17c);
+     border-radius: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .user-info .avatar img {
+    border: solid 8px #ffffff;
+     border-radius: 100%;
+     width: 216px;
+    height: 216px;
+    object-fit: contain;
+}
+ .user-info .description {
+    width: 896px;
+}
+ .user-info .description .user {
+    display: flex;
+    align-items: center;
+}
+ .user-info .description .counter ul {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0;
+}
+ .user-info .description .counter ul li {
+    list-style: none;
+    font-size: 23px;
+    margin-right: 60px;
+}
+ .user-info .description .counter ul li:last-of-type {
+    margin-right: 0;
+}
+ .user-info .description .counter ul li span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+ .user-info .description .about {
+    font-size: 23px;
+}
+ .user-info .description .about span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+ .user-info .description .about p {
+    margin: 0;
+    display: inline-block;
+}
+ .user-info .description .about a {
+    display: block;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+ .user-info .description .user .login {
+    font-size: 49px;
+    margin-right: 35px;
+    font-weight: 100;
+}
+ .user-info .description .user .button-follow {
+    margin-right: 10px;
+}
+ .user-info .description .user a.button.button-blue {
+    margin-right: 10px;
+    padding: 10px 15px;
+    width: 49px;
 } 
