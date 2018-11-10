@@ -12,6 +12,12 @@
 
 </head>
 <body>
+        <script>
+                function hidePlaceholder() {
+                    document.getElementById('search-placeholder').style.display = 'none';
+                    document.getElementById('serch-input').style.display = 'block';
+                }
+            </script>
 <nav>
     <div class="container">
         <div class="logo">
@@ -20,7 +26,12 @@
             <img src="icons/text-logo.png" alt=""/>
         </div>
         <div class="search">
-            <input type="text" placeholder="Search">
+                <div class="search-input">
+                        <div id="search-placeholder" onclick='hidePlaceholder()' class="search-placeholder">
+                            <img src="icons/search-icon.png"> <span>Search</span>
+                        </div>
+                        <input id='serch-input' type="text" placeholder="Search">
+                    </div>            
         </div>
         <div class="links">
             <ul>
@@ -44,6 +55,9 @@
             <div class="avatar">
                 <div class="avatar-background">
                     <img src="images/avatar.jpg" />
+                    <svg viewBox="0 0 228 228">
+                            <circle r="105" cx="114" cy="114"></circle>
+                        </svg>
                 </div>
     </div>
     <div class="description">
